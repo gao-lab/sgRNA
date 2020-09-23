@@ -27,7 +27,7 @@ awk '{print $1,$2,$3,$4,$4+length($5)-3-1}' OFS="\t" ${name}.subsam > ${name}.re
 
 # GC
 sed 's/AGG$//' cand_fa/${name}_A.fa > ${name}.seq
-/home/gaog_pkuhpc/users/tianf/Tools/EMBOSS-6.6.0/emboss/infoseq -nohead -only -name -pgc ${name}.seq > ${name}.gc
+infoseq -nohead -only -name -pgc ${name}.seq > ${name}.gc	# infoseq in EMBOSS (v6.6.0)
 
 Rscript do_moving.r $name
 

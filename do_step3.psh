@@ -12,6 +12,8 @@ do
 done
 }
 
+do_str1
+
 function do_str2 {
 for i in A C G T
 do

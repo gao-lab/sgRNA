@@ -2,7 +2,7 @@
 A pipeline for sgRNA design
 
 ## Usage
-1. Rscript do_sgRNA_form_sg.r foo.fa xname
+1. Rscript do_sgRNA_form_sg_noG.r foo.fa xname
 2. bash do_seq2fa.sh xname
 3. bash do_bt2.sh xname
 4. bash do_step1.psh xname
